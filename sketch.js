@@ -3,7 +3,7 @@ var voice,a,b;
 function setup() {
   createCanvas(windowWidth,windowHeight);
   
-  voice = new p5.Speech();
+  voice = new p5.Speech(voiceReady);
   voice.setLang("hindi");
   a = createInput("");
   a.position(width/2-30,height/2);
