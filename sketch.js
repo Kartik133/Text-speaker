@@ -9,6 +9,9 @@ function setup() {
   a.position(width/2-30,height/2);
   b = createButton("Speak");
   b.position(width/2-30,height/2+30);
+  function voiceReady(){
+    console.log(voice.voices);
+  }
 }
 
 function draw() {
